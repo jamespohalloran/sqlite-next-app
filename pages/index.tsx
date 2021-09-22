@@ -25,12 +25,12 @@ const Home = ({todos}: Props) => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Here's a list of TODO's
+          My TODO List
         </h1>
       <div>{todos.map((todo: any) => (
-        <p >
+        <div className="card"><p>
          {todo.Name}
-        </p>)) }</div>
+        </p></div>)) }</div>
 
       </main>
 
