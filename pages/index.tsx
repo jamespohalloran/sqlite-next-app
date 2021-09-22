@@ -28,7 +28,7 @@ const Home = ({todos}: Props) => {
         <div>To test publicly accessible content-api on this site, go to <a href={`/api/content-api`}>/api/content-api</a></div>
 
       <div>{todos.map((todo: any) => (
-        <div className="card"><p>
+        <div key={todo.Name} className="card"><p>
          {todo.Name}
         </p></div>)) }</div>     
 
