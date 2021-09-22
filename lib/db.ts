@@ -1,5 +1,5 @@
 import sqlite from "sqlite3";
 
-const db = new sqlite.Database(`${process.cwd()}/sqlite.db`);
+const db = new sqlite.Database(`${process.cwd()}/public/sqlite.db`);
 
 export default db;
