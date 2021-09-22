@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -23,16 +22,15 @@ const Home = ({todos}: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
         <h1 className={styles.title}>
           My TODO List
         </h1>
+        <div>To test publicly accessible content-api on this site, go to <a href={`/api/content-api`}>/api/content-api</a></div>
+
       <div>{todos.map((todo: any) => (
         <div className="card"><p>
          {todo.Name}
-        </p></div>)) }</div>
-
-      </main>
+        </p></div>)) }</div>     
 
       <footer className={styles.footer}>
         <a
